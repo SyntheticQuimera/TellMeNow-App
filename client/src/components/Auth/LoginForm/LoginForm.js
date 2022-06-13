@@ -16,7 +16,7 @@ export default function LoginForm() {
   const formik = useFormik({
     initialValues: initialValues(),
     validationSchema: Yup.object({
-      email: Yup.string().email("Invalid email").required(true),
+      email: Yup.string().email(true).required(true),
       password: Yup.string().required(true),
     }),
     onSubmit: async (formData) => {

@@ -9,9 +9,8 @@ export default function Auth() {
   const [showLogin, setShowLogin] = useState(true);
   return (
     <Container fluid className="auth">
-      <Image src={logo} />
-
       <div className="container-form">
+        <Image src={logo} />
         {showLogin ? (
           <LoginForm />
         ) : (

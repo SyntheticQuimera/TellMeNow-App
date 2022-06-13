@@ -1,0 +1,20 @@
+@import "../../scss/index.scss";
+
+.header {
+    position: relative;
+    padding: 12px 0;
+    background-color: $header-color;
+    z-index: 1;
+  
+    &__logo {
+      display: none;
+      align-items: center;
+      
+      img {
+        filter: invert(100%);
+        height: 36px;
+      }
+    }
+  }
+
+
