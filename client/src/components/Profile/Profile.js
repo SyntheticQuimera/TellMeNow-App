@@ -20,5 +20,4 @@ export default function Profile(props) {
     </div>
   );
 }
-console.log("hello")
-s
+
