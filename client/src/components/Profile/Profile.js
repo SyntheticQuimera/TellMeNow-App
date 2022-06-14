@@ -1,6 +1,8 @@
 import React from "react";
+import { Grid, Image } from "semantic-ui-css";
 import { useQuery } from "@apollo/client";
 import { GET_USER } from "../../gql/user";
+import ImageNoFound from "../../assets/png/avatar.png";
 import "./Profile.scss";
 
 export default function Profile(props) {
@@ -15,8 +17,15 @@ export default function Profile(props) {
 
   console.log(getUser);
   return (
-    <div>
-      <h1>Profile...</h1>
-    </div>
+    <>
+      <Grid className="profile">
+        <Grid.Column widht={5} className="profile__left">
+          <span>Left</span>
+        </Grid.Column>
+        <Grid.Column widht={11} className="profile__right">
+          <span>Right</span>
+        </Grid.Column>
+      </Grid>
+    </>
   );
 }
