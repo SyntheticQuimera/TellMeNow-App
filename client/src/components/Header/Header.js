@@ -15,7 +15,7 @@ export default function Header() {
           <Grid>
             <Grid.Column width={4} className="header__logo">
               <Link to="/">
-                <Image src={Logo} alt="Logo" />
+                <Image src={Logo} alt="Logo" size="small" />
               </Link>
             </Grid.Column>
             <Grid.Column width={9}>
