@@ -36,7 +36,3 @@ export default function AvatarForm(props) {
     </div>
   );
 }
-
-changeeeeeee;
-asdasdasd;
-asdasda;
