@@ -27,7 +27,7 @@ export default function Profile(props) {
     switch (type) {
       case "avatar":
         setTitleModal("Change your profile photo");
-        setChildrenModal(<AvatarForm />);
+        setChildrenModal(<AvatarForm setShowModal={setShowModal} />);
         setShowModal(true);
         break;
 
